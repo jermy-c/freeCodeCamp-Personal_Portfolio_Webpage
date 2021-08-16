@@ -8,6 +8,14 @@
     <title>Personal Portfolio</title>
 </head>
 <body>
+    <nav id="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#welcome-section" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Work</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section id="welcome-section">
             <h1 class="welcome-message">Hi I am Jeremy</h1>
@@ -17,10 +25,26 @@
         <section id="projects">
             <h2 class="projects-title">Here are some of my projects</h2>
             <div class="projects-container">
-                    <a href="#" class="project-tile"><img src="" alt="" class="project-img"></a>
+                    <a href="#" class="project-tile" target="_blank"><img src="./img/tribute-page.png" alt="tribute page" class="project-img"><p class="project-name">Tribute Page</p></a>
+                    <a href="#" class="project-tile" target="_blank"><img src="./img/survey-form.png" alt="survey-form" class="project-img"><p class="project-name">Survey Form</p></a>
+                    <a href="#" class="project-tile" target="_blank"><img src="./img/product-landing-page.png" alt="product-landing-page" class="project-img"><p class="project-name">Product Landing Page</p></a>
+                    <a href="#" class="project-tile" target="_blank"><img src="./img/technical-documentation-page.png" alt="technical-documentation-page" class="project-img"><p class="project-name">Technical Documentation Page</p></a>
             </div>
         </section>
+
+        <section id="contact">
+            <h2 class="contact-message">Let's collab...</h2>
+            <p class="contact-description">Tea time?</p>
+            <ul class="contact-list">
+                <li class="contact-item"><a href="#" class="contact-link" id="profile-link" target="_blank"> <img src="./img/github-logo-6532.svg" alt="" class="contact-logo"> GitHub</a></li>
+                <li class="contact-item"><a href="#" class="contact-link" id="profile-link" target="_blank"> <img src="./img/linkedin-112.svg" alt="" class="contact-logo"> Linkedin</a></li>
+                <li class="contact-item"><a href="#" class="contact-link" id="profile-link" target="_blank"> <img src="./img/twitter-117.svg" alt="" class="contact-logo"> Twitter</a></li>
+            </ul>
+        </section>
     </main>
+    <footer>
+        <p class="footer-message">made for fun :)</p>
+    </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script>const projectName = 'portfolio';</script>

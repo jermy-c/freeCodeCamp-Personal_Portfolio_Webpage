@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap');
+
+:root{
+    /* Color */
+    --color-1: #FF9F1C;
+    --color-2: #FFBF69;
+    --color-3: #FFFFFF;
+    --color-4: #CBF3F0;
+    --color-5: #2EC4B6;
+
+    /* Fonts */
+    --title-font: 'Chivo', sans-serif;
+    --paragraph-font: 'Overpass', sans-serif;
+    --heading: 5rem;
+    --sub-heading: 2rem;
+    --paragraph: 1.5rem;
+
+    --mobile-heading: 3rem;
+    --mobile-sub-heading: 2rem;
+    --mobile-paragraph: 1rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    top: 0;
+}
+
+#navbar{
+    position: fixed;
+    background-color: var(--color-5);
+    width: 100vw;
+    top: 0;
+}
+
+.nav-list{
+    display: flex;
+    width: 20rem;
+    justify-content: space-around;
+    float: right;
+    list-style: none;
+    font-size: var(--paragraph);
+    font-family: var(--paragraph-font);
+    margin-right: 2rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-4);
+    color: var(--color-1);
+}
+
+.welcome-message{
+    font-size: var(--heading);
+    font-family: var(--title-font);
+    margin-bottom: -2rem;
+}
+
+.welcome-description{
+    font-size: var(--sub-heading);
+    font-family: var(--paragraph-font);
+}
+
+#projects{
+    background-color: var(--color-1);
+    text-align: center;
+    padding: 1rem;
+}
+
+.projects-title{
+    margin-top: 3rem;
+    color: var(--color-3);
+    font-family: var(--title-font);
+    font-size: var(--sub-heading);
+    font-weight: 900;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.project-tile{
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+}
+
+.project-img{
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    padding: 2rem 0.5rem;
+    background-color: var(--color-5);
+    margin-bottom: -3rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.project-name{
+    font-size: 1rem;
+    padding: 2rem 0.5rem;
+    background-color: var(--color-5);
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    margin: 1rem auto;
+    font-size: var(--paragraph);
+    font-weight: 900;
+    color: var(--color-3);
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    background-color: var(--color-4);
+    padding: 1rem;
+    color: var(--color-1);
+}
+
+.contact-message{
+    font-size: var(--heading);
+    font-family: var(--title-font);
+    margin-bottom: -2rem;
+}
+
+.contact-description{
+    font-size: var(--sub-heading);
+    font-family: var(--paragraph-font);
+}
+
+.contact-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contact-logo{
+    height: var(--sub-heading);
+    width: var(--sub-heading);
+    color: var(--color-1);
+}
+
+.contact-link{
+    color: var(--color-1);
+    font-size: var(--paragraph);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5rem;
+    padding: 1rem;
+    background-color: var(--color-5);
+}
+
+.footer-message{
+    color: var(--color-3);
+    font-size: var(--paragraph);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    :root{
+        --heading: var(--mobile-heading);
+        --sub-heading: var(--mobile-sub-heading);
+        --paragraph: var(--paragraph);
+    }
+}
+
+
+
+
+
